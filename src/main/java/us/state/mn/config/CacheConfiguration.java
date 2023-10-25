@@ -48,6 +48,11 @@ public class CacheConfiguration {
             createCache(cm, us.state.mn.domain.User.class.getName());
             createCache(cm, us.state.mn.domain.Authority.class.getName());
             createCache(cm, us.state.mn.domain.User.class.getName() + ".authorities");
+            createCache(cm, us.state.mn.domain.Blog.class.getName());
+            createCache(cm, us.state.mn.domain.Post.class.getName());
+            createCache(cm, us.state.mn.domain.Post.class.getName() + ".tags");
+            createCache(cm, us.state.mn.domain.Tag.class.getName());
+            createCache(cm, us.state.mn.domain.Tag.class.getName() + ".blogs");
             // jhipster-needle-ehcache-add-entry
         };
     }

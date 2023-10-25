@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MaarcApp<maarc>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "us.state.mn.MaarcApp",
+            "projectName": "maarc",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

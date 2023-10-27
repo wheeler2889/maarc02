@@ -17,6 +17,8 @@ import us.state.mn.domain.Post;
  */
 @Repository
 public interface PostRepository extends PostRepositoryWithBagRelationships, JpaRepository<Post, Long> {
+    Page<Post> findByBlogUserLoginOrderByDateDesc(String currentUserLogin, Pageable pageable);
+
     default Optional<Post> findOneWithEagerRelationships(Long id) {
         return this.fetchBagRelationships(this.findOneWithToOneRelationships(id));
     }

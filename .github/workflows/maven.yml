@@ -21,12 +21,12 @@ jobs:
         run: mvn -B package --file pom.xml
 
 # https://github.com/marketplace/actions/docker-build-push-action
-# docker push wheeler0772/hello-world-001-images:tagname
+# docker push wheeler0772/maarc02-images:tagname
 
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          image: wheeler0772/hello-world-001-images
+          image: wheeler0772/maarc02-images
           tags: latest
           registry: docker.io
           dockerfile: Dockerfile

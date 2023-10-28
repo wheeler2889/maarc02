@@ -22,6 +22,7 @@ jobs:
 
 # https://github.com/marketplace/actions/docker-build-push-action
 # docker push wheeler0772/maarc02-images:tagname
+# Updated DOCKER_USERNAME and DOCKDER_PASSWORD in GitHub
 
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v6

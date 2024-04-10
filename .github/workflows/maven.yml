@@ -28,7 +28,7 @@ jobs:
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
           image: wheeler0772/maarc02-images
-          tags: latest
+          tags: latest,github-wheeler2889-maarc02
           registry: docker.io
           dockerfile: Dockerfile
           username: wheeler0772

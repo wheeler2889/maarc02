@@ -31,5 +31,5 @@ jobs:
           tags: latest,github-wheeler2889-maarc02
           registry: docker.io
           dockerfile: Dockerfile
-          username: wheeler0772
-          password: Docker2023!
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
